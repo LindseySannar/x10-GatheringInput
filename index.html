@@ -4,23 +4,20 @@
   <title>Gathering Input</title>
   <script lang="javascript">
     function getName() {
-      document.getElementById("getName").innerHTML = "done!";
+      var fullName;
+      fullName = document.getElementById("First").value;
+      document.getElementById("message").innerHTML = fullName;
     }
+    
 </script>
 </head>
 <body>
 
   <input type="text" id="First"><br>
   <input type="text" id="Last"><br>
-  <button type="button" id="doneButton" onclick="getName();">
+  <button type="button" id="doneButton" onclick="getName();">Done
+  </button>
   <p id="message"></p>
 
 </body>
-
-
-
-
-
-
-
 </html>
